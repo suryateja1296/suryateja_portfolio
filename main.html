@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Surya Teja Appadi | Portfolio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://kit.fontawesome.com/a2d9d6e76b.js" crossorigin="anonymous"></script>
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+    /* Hover scaling effect */
+    .hover-scale {
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .hover-scale:hover {
+      transform: scale(1.05);
+      box-shadow: 0px 8px 20px rgba(0,0,0,0.2);
+    }
+    /* Fade-in animation */
+    @keyframes fadeInUp {
+      0% { opacity: 0; transform: translateY(20px); }
+      100% { opacity: 1; transform: translateY(0); }
+    }
+    .fade-in-up {
+      animation: fadeInUp 1s ease forwards;
+    }
+    /* Navbar hover underline */
+    .nav-links a {
+      position: relative;
+      padding-bottom: 4px;
+    }
+    .nav-links a::after {
+      content: "";
+      position: absolute;
+      width: 0%;
+      height: 2px;
+      bottom: 0;
+      left: 0;
+      background-color: #60a5fa;
+      transition: width 0.3s ease-in-out;
+    }
+    .nav-links a:hover::after {
+      width: 100%;
+    }
+  </style>
+</head>
+<body class="bg-gray-100 text-gray-900">
+
+<!-- Navigation -->
+<nav class="bg-blue-900 text-white fixed w-full z-50 shadow">
+  <div class="max-w-6xl mx-auto px-4 flex justify-between items-center h-16">
+    <h1 class="font-bold text-lg">Portfolio.</h1>
+    <ul class="nav-links flex space-x-6">
+      <li><a href="#home" class="hover:text-blue-300 transition">Home</a></li>
+      <li><a href="#about" class="hover:text-blue-300 transition">About</a></li>
+      <li><a href="#skills" class="hover:text-blue-300 transition">Skills</a></li>
+      <li><a href="#projects" class="hover:text-blue-300 transition">Projects</a></li>
+      <li><a href="#contact" class="hover:text-blue-300 transition">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+
+<!-- Hero Section -->
+<section id="home" class="bg-gradient-to-r from-blue-900 to-indigo-800 text-white pt-32 pb-20">
+  <div class="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between px-6 fade-in-up">
+
+    <!-- Left: Text -->
+    <div class="text-center md:text-left mb-10 md:mb-0">
+      <p class="text-lg">Hello, It's Me</p>
+      <h1 class="text-4xl md:text-5xl font-bold">Surya Teja Appadi</h1>
+      <h2 class="text-2xl text-blue-300 font-semibold mt-2">Aspiring Software Developer</h2>
+      <p class="mt-4 max-w-md">
+        Passionate about building innovative solutions in Java, SQL, and Web Development. Skilled in backend and frontend technologies, with hands-on experience in AI and data-driven projects.
+      </p>
+
+      <!-- Social Links -->
+      <div class="flex justify-center md:justify-start mt-6 space-x-4">
+        <a href="https://www.linkedin.com/in/surya-teja-appadi-313467283/" target="_blank" class="bg-white text-blue-900 p-3 rounded-full hover:scale-110 transition">
+          <i class="fab fa-linkedin"></i>
+        </a>
+        <a href="https://github.com/suryateja1296" target="_blank" class="bg-white text-blue-900 p-3 rounded-full hover:scale-110 transition">
+          <i class="fab fa-github"></i>
+        </a>
+        <a href="mailto:appadisuryateja@outlook.com" class="bg-white text-blue-900 p-3 rounded-full hover:scale-110 transition">
+          <i class="fas fa-envelope"></i>
+        </a>
+      </div>
+
+      <!-- More Button -->
+      <a href="#about" class="mt-6 inline-block bg-blue-500 hover:bg-blue-600 text-white px-6 py-2 rounded-full transition">
+        More About Me
+      </a>
+    </div>
+
+    <!-- Right: Photo -->
+    <div class="relative">
+      <div class="rounded-full p-1 bg-gradient-to-r from-blue-400 via-purple-500 to-pink-500 animate-static hover-scale">
+        <!-- Replace with your photo path -->
+        <img src="wal.jpeg" alt="Surya Teja" class="rounded-full w-64 h-64 object-cover border-4 border-white shadow-lg">
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- About -->
+<section id="about" class="max-w-5xl mx-auto py-16 px-6 fade-in-up">
+  <h2 class="text-3xl font-bold mb-4">About Me</h2>
+  <p class="text-lg leading-relaxed mb-6">
+    I am a passionate software developer with strong skills in Java, SQL, HTML, CSS, and a growing knowledge in AI and Data Science.
+    I enjoy solving complex problems and creating efficient, scalable solutions. My work spans from building interactive front-end web pages to designing robust back-end logic.
+    I have worked on machine learning projects for healthcare as well as web-based applications for agriculture, aiming to create real-world impact through technology.
+  </p>
+
+  <!-- Internship Experience -->
+  <h3 class="text-2xl font-semibold mb-4">Internship Experience</h3>
+  
+  <div class="bg-white p-6 rounded-lg shadow hover-scale mb-6">
+    <h4 class="text-xl font-bold">Full Stack Development Training</h4>
+    <p class="text-gray-700 mb-2"><strong>May 2025 – Present</strong></p>
+    <ul class="list-disc ml-5 text-gray-700">
+      <li>Undergoing intensive training in Java Full Stack Development (Core Java, Advanced Java, JDBC, Spring Boot, MySQL, HTML, CSS, JavaScript).</li>
+      <li>Building projects with real-world use cases to gain practical experience.</li>
+      <li>Exploring manual and automation testing fundamentals.</li>
+    </ul>
+  </div>
+
+  <div class="bg-white p-6 rounded-lg shadow hover-scale">
+    <h4 class="text-xl font-bold">Web Development Intern</h4>
+    <p class="text-gray-700 mb-2"><strong>Feb 2024 – Mar 2024</strong></p>
+    <ul class="list-disc ml-5 text-gray-700">
+      <li>Worked on responsive front-end layouts using HTML, CSS, and JavaScript.</li>
+      <li>Implemented clean, reusable code while following web development best practices.</li>
+      <li>Debugged UI issues and collaborated with team members to enhance website performance.</li>
+      <li>Improved understanding of how frontend and backend systems interact.</li>
+    </ul>
+  </div>
+</section>
+
+<!-- Skills -->
+<section id="skills" class="bg-gray-200 py-16">
+  <div class="max-w-5xl mx-auto px-6 fade-in-up">
+    <h2 class="text-3xl font-bold mb-6">Skills</h2>
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+      <div class="bg-white p-4 rounded-lg shadow hover-scale text-center font-semibold">Java</div>
+      <div class="bg-white p-4 rounded-lg shadow hover-scale text-center font-semibold">SQL</div>
+      <div class="bg-white p-4 rounded-lg shadow hover-scale text-center font-semibold">HTML & CSS</div>
+      <div class="bg-white p-4 rounded-lg shadow hover-scale text-center font-semibold">Tableau</div>
+      <div class="bg-white p-4 rounded-lg shadow hover-scale text-center font-semibold">Excel</div>
+      <div class="bg-white p-4 rounded-lg shadow hover-scale text-center font-semibold">Python Basics</div>
+      <div class="bg-white p-4 rounded-lg shadow hover-scale text-center font-semibold">VS Code / Eclipse</div>
+    </div>
+  </div>
+</section>
+
+<!-- Projects -->
+<section id="projects" class="max-w-6xl mx-auto py-16 px-6 fade-in-up">
+  <h2 class="text-3xl font-bold mb-6">Projects</h2>
+  <div class="grid md:grid-cols-2 gap-8">
+    <!-- Project 1 -->
+    <div class="bg-white p-6 rounded-lg shadow hover-scale cursor-pointer">
+      <h3 class="text-xl font-semibold mb-2">Multiple Disease Detection</h3>
+      <p class="mb-2">A multi-disease prediction system capable of detecting diabetes, kidney disease, breast cancer, and liver disease.</p>
+      <ul class="list-disc ml-5 text-sm">
+        <li>Achieved 94.8% accuracy using SVM, Random Forest, CNN, and RNN models.</li>
+        <li>Implemented preprocessing, model training, and evaluation in Python.</li>
+        <li>Improved healthcare diagnosis with data-driven insights.</li>
+      </ul>
+    </div>
+    <!-- Project 2 -->
+    <div class="bg-white p-6 rounded-lg shadow hover-scale cursor-pointer">
+      <h3 class="text-xl font-semibold mb-2">E-Kissan Farm Management System</h3>
+      <p class="mb-2">A web application that enables farmers to manage and sell crops online.</p>
+      <ul class="list-disc ml-5 text-sm">
+        <li>Developed using HTML, CSS, PHP, and MySQL.</li>
+        <li>Implemented login/register system, crop listings, and admin dashboard.</li>
+        <li>Improved accessibility and transparency in the agriculture supply chain.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- Contact -->
+<section id="contact" class="bg-gradient-to-r from-blue-900 to-indigo-800 text-white py-16 fade-in-up">
+  <div class="max-w-5xl mx-auto text-center">
+    <h2 class="text-3xl font-bold mb-4">Get In Touch</h2>
+    <p>Email: <a href="mailto:appadisuryateja@outlook.com" class="underline">appadisuryateja@outlook.com</a></p>
+    <p>Phone: +91 7032274736</p>
+  </div>
+</section>
+
+<script>
+  // Fade-in effect on scroll
+  const elements = document.querySelectorAll('.fade-in-up');
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.style.opacity = 1;
+        entry.target.style.transform = 'translateY(0)';
+      }
+    });
+  }, { threshold: 0.1 });
+  elements.forEach(el => {
+    el.style.opacity = 0;
+    el.style.transform = 'translateY(20px)';
+    observer.observe(el);
+  });
+</script>
+
+</body>
+</html>
